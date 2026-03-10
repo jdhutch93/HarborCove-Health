@@ -3,7 +3,9 @@
    Design: Harbor Light — sage green background, harbor wave motif
    ============================================================ */
 import { Link } from "wouter";
-import { Phone, Mail, MapPin, Printer } from "lucide-react";
+import { Phone, Mail, MapPin, Printer, MessageSquare } from "lucide-react";
+
+const SPRUCE_URL = "https://spruce.care/harborcovehealth";
 
 // Social media SVG icons
 const FacebookIcon = () => (
@@ -139,7 +141,17 @@ export default function Footer() {
                 </li>
                 <li className="flex items-start gap-2.5">
                   <Mail className="w-4 h-4 text-[#7EC8A4] mt-0.5 flex-shrink-0" />
-                  <a href="mailto:jdhutch93@HarborCoveHealth.com" className="text-[#C8E6D4] hover:text-white text-sm font-['Nunito_Sans'] transition-colors">jdhutch93@HarborCoveHealth.com</a>
+                  <div>
+                    <a href="mailto:jdhutch93@HarborCoveHealth.com" className="text-[#C8E6D4] hover:text-white text-sm font-['Nunito_Sans'] transition-colors">jdhutch93@HarborCoveHealth.com</a>
+                    <p className="text-[#7EC8A4] text-xs font-['Nunito_Sans'] mt-0.5">HIPAA-Compliant Email</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <MessageSquare className="w-4 h-4 text-[#7EC8A4] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <a href={SPRUCE_URL} target="_blank" rel="noopener noreferrer" className="text-[#C8E6D4] hover:text-white text-sm font-['Nunito_Sans'] transition-colors">Secure Message via Spruce</a>
+                    <p className="text-[#7EC8A4] text-xs font-['Nunito_Sans'] mt-0.5">HIPAA-Compliant Messaging</p>
+                  </div>
                 </li>
               </ul>
             </div>

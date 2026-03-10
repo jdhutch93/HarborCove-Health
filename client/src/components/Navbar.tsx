@@ -5,7 +5,9 @@
    ============================================================ */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageSquare } from "lucide-react";
+
+const SPRUCE_URL = "https://spruce.care/harborcovehealth";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -128,9 +130,19 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <a
+              href={SPRUCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 inline-flex items-center gap-1.5 px-4 py-2 bg-white/15 hover:bg-white/25 text-white text-sm rounded transition-colors duration-150"
+              style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 600 }}
+              title="HIPAA-Compliant Secure Messaging"
+            >
+              <MessageSquare className="w-3.5 h-3.5" /> Secure Message
+            </a>
             <Link
               href="/intake-forms"
-              className="ml-3 px-5 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm rounded transition-colors duration-150 shadow-sm"
+              className="ml-2 px-5 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm rounded transition-colors duration-150 shadow-sm"
               style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 700 }}
             >
               Start Intake
@@ -166,6 +178,15 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <a
+              href={SPRUCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 flex items-center justify-center gap-2 px-4 py-3 bg-white/15 hover:bg-white/25 text-white text-sm rounded"
+              style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 600 }}
+            >
+              <MessageSquare className="w-4 h-4" /> Secure Message (Spruce)
+            </a>
             <Link
               href="/intake-forms"
               className="mt-2 px-4 py-3 bg-[#2E8B6E] text-white text-sm rounded text-center"

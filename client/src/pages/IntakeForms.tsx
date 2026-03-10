@@ -4,9 +4,11 @@
    Weight Loss → Ketamine → Referring Providers
    Patient-friendly language, compliant medication naming
    ============================================================ */
-import { ArrowRight, Lock, Scale, Brain, Stethoscope, UserPlus, RefreshCw } from "lucide-react";
+import { ArrowRight, Lock, Scale, Brain, Stethoscope, UserPlus, RefreshCw, MessageSquare } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+const SPRUCE_URL = "https://spruce.care/harborcovehealth";
 
 /* ── SERVICE SECTION DATA ── */
 const services = [
@@ -176,11 +178,24 @@ export default function IntakeForms() {
           <p className="text-[#C8E6D4] font-['Nunito_Sans'] text-lg max-w-2xl mb-6">
             Select your service below. New patients start with an intake form. Current patients can reorder or schedule directly.
           </p>
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5">
-            <Lock className="w-3.5 h-3.5 text-[#7EC8A4]" />
-            <span className="text-[#7EC8A4] text-xs font-['Nunito_Sans'] font-700 tracking-wider uppercase">
-              HIPAA-Compliant Secure Forms
-            </span>
+          <div className="flex flex-wrap gap-3">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5">
+              <Lock className="w-3.5 h-3.5 text-[#7EC8A4]" />
+              <span className="text-[#7EC8A4] text-xs font-['Nunito_Sans'] font-700 tracking-wider uppercase">
+                HIPAA-Compliant Secure Forms
+              </span>
+            </div>
+            <a
+              href={SPRUCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full px-4 py-1.5 transition-colors"
+            >
+              <MessageSquare className="w-3.5 h-3.5 text-[#7EC8A4]" />
+              <span className="text-[#7EC8A4] text-xs font-['Nunito_Sans'] font-700 tracking-wider uppercase">
+                Have a question? Message us on Spruce
+              </span>
+            </a>
           </div>
         </div>
       </section>
