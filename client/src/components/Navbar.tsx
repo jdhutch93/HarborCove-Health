@@ -45,17 +45,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-2.5 group flex-shrink-0">
             <img
               src="/assets/logo-shield.png"
               alt="HarborCove Health Logo"
-              className="h-10 w-auto object-contain"
+              className="h-10 w-10 object-contain flex-shrink-0 drop-shadow-sm"
             />
-            <img
-              src="/assets/logo-wordmark.png"
-              alt="HarborCove Health"
-              className="h-8 w-auto object-contain hidden sm:block"
-            />
+            <div className="hidden sm:flex flex-col leading-none">
+              <span className="font-['Lora'] font-700 text-white text-lg tracking-tight leading-tight">HarborCove</span>
+              <span className="font-['Nunito_Sans'] font-400 text-[#C8E6D4] text-xs tracking-[0.18em] uppercase leading-tight">Health</span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
