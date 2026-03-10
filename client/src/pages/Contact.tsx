@@ -81,32 +81,52 @@ export default function Contact() {
       </section>
 
       {/* ── SECURE MESSAGING BANNER ── */}
-      <section className="bg-[#F2F7F5] border-b border-[#D4E8DF] py-5">
+      <section className="bg-[#F2F7F5] border-b border-[#D4E8DF] py-6">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
-            <div className="flex items-center gap-2 flex-shrink-0">
-              <Lock className="w-4 h-4 text-[#2E8B6E]" />
-              <span className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm">
-                All contact methods on this page are HIPAA-compliant
-              </span>
+          <div className="flex items-center gap-2 mb-4">
+            <Lock className="w-4 h-4 text-[#2E8B6E]" />
+            <span className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm">
+              All contact methods on this page are HIPAA-compliant
+            </span>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4">
+            {/* Spruce */}
+            <div className="flex-1 flex items-start gap-3 bg-white border border-[#D4E8DF] rounded-2xl p-4">
+              <div className="w-9 h-9 rounded-xl bg-[#1B5E4B]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <MessageSquare className="w-4 h-4 text-[#1B5E4B]" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm">Secure Message via Spruce</p>
+                <p className="text-[#6B7280] font-['Nunito_Sans'] text-xs mt-0.5 leading-relaxed">
+                  Spruce is our HIPAA-compliant secure messaging platform — like texting, but private and encrypted. No app download needed.
+                </p>
+                <a
+                  href={SPRUCE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 mt-2 text-[#2E8B6E] hover:text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-xs transition-colors"
+                >
+                  Open Spruce <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
             </div>
-            <div className="flex flex-wrap gap-3">
-              <a
-                href={SPRUCE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-[#1B5E4B] hover:bg-[#174f3e] text-white font-['Nunito_Sans'] font-700 text-sm rounded-xl transition-colors"
-              >
-                <MessageSquare className="w-4 h-4" />
-                Secure Message via Spruce
-              </a>
-              <a
-                href="mailto:jdhutch93@HarborCoveHealth.com"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white hover:bg-[#E8F5EE] border border-[#D4E8DF] text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm rounded-xl transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                HIPAA-Compliant Email
-              </a>
+            {/* Email */}
+            <div className="flex-1 flex items-start gap-3 bg-white border border-[#D4E8DF] rounded-2xl p-4">
+              <div className="w-9 h-9 rounded-xl bg-[#1B5E4B]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <Mail className="w-4 h-4 text-[#1B5E4B]" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm">HIPAA-Compliant Email</p>
+                <p className="text-[#6B7280] font-['Nunito_Sans'] text-xs mt-0.5 leading-relaxed">
+                  Our email is hosted on Google Workspace with a signed Business Associate Agreement — safe for clinical communication.
+                </p>
+                <a
+                  href="mailto:jdhutch93@HarborCoveHealth.com"
+                  className="inline-flex items-center gap-1.5 mt-2 text-[#2E8B6E] hover:text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-xs transition-colors break-all"
+                >
+                  jdhutch93@HarborCoveHealth.com <ExternalLink className="w-3 h-3 flex-shrink-0" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
