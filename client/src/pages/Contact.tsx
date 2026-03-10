@@ -372,6 +372,47 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* ── MAP ── */}
+      <section className="py-12 bg-[#F2F7F5] border-t border-[#D4E8DF]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-xs tracking-widest uppercase mb-1">Find Us</p>
+            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-2xl">Our Location</h2>
+            <p className="text-[#6B7280] font-['Nunito_Sans'] text-sm mt-1">3970 W 36th St, Suite 209 · Yuma, AZ 85364</p>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-[#D4E8DF]" style={{ height: '420px' }}>
+            <iframe
+              title="HarborCove Health Location"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.5!2d-114.6665882!3d32.6613846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d65889f2a8bf4b%3A0x617e601c8ce05acf!2s3970%20W%2036th%20St%20%23209%2C%20Yuma%2C%20AZ%2085365!5e1!3m2!1sen!2sus!4v1710000000000"
+            />
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <a
+              href="https://maps.google.com/?q=3970+W+36th+St+Suite+209+Yuma+AZ+85364"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#1B5E4B] hover:bg-[#174f3e] text-white font-['Nunito_Sans'] font-700 text-sm rounded-xl transition-colors"
+            >
+              <MapPin className="w-4 h-4" /> Open in Google Maps
+            </a>
+            <a
+              href="https://maps.apple.com/?address=3970+W+36th+St,+Suite+209,+Yuma,+AZ+85364"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-white hover:bg-[#E8F5EE] border border-[#D4E8DF] text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm rounded-xl transition-colors"
+            >
+              <MapPin className="w-4 h-4" /> Open in Apple Maps
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── DISCLAIMER ── */}
       <section className="py-8 bg-[#F4F7FA] border-t border-[#E8EEF4]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
