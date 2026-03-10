@@ -1,7 +1,6 @@
 /* ============================================================
    HARBORCOVE HEALTH — Navbar
-   Design: Harbor Light — sticky, transparent-to-solid on scroll
-   Teal/green background, large prestigious logo, Lora + Nunito Sans
+   Large prestigious logo: shield + exact brand wordmark
    ============================================================ */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
@@ -39,54 +38,72 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || !isHome
           ? "bg-[#1B5E4B] shadow-xl"
-          : "bg-[#1B5E4B]/90 backdrop-blur-sm"
+          : "bg-[#1B5E4B]/92 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between" style={{ height: '76px' }}>
+        <div className="flex items-center justify-between" style={{ height: '88px' }}>
 
           {/* ── LOGO ── */}
-          <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-            {/* Shield — transparent background, large and commanding */}
+          <Link href="/" className="flex items-center gap-4 group flex-shrink-0">
+            {/* Large shield — transparent, no white box */}
             <img
               src="/assets/logo-shield-transparent.png"
-              alt="HarborCove Health"
+              alt="HarborCove Health Shield"
               style={{
-                height: '60px',
-                width: '60px',
+                height: '76px',
+                width: '76px',
                 objectFit: 'contain',
                 flexShrink: 0,
-                filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.35))',
+                filter: 'drop-shadow(0 3px 10px rgba(0,0,0,0.4))',
                 transition: 'transform 0.3s ease',
               }}
               className="group-hover:scale-105"
             />
-            {/* Wordmark — elegant serif + spaced caps */}
-            <div className="hidden sm:flex flex-col justify-center" style={{ gap: '1px' }}>
+
+            {/* Wordmark — exact brand typography */}
+            <div className="hidden sm:flex flex-col justify-center" style={{ gap: 0 }}>
+              {/* "HarborCove" — large elegant serif matching brand */}
               <span
                 style={{
-                  fontFamily: "'Lora', Georgia, serif",
-                  fontWeight: 700,
-                  fontSize: '1.5rem',
+                  fontFamily: "'Lora', Georgia, 'Times New Roman', serif",
+                  fontWeight: 400,
+                  fontSize: '2rem',
                   color: '#ffffff',
-                  letterSpacing: '-0.01em',
+                  letterSpacing: '-0.02em',
                   lineHeight: 1,
-                  textShadow: '0 1px 4px rgba(0,0,0,0.2)',
+                  textShadow: '0 1px 6px rgba(0,0,0,0.25)',
                 }}
               >
                 HarborCove
               </span>
+
+              {/* Wave swoosh SVG — matches the brand wave */}
+              <svg
+                viewBox="0 0 200 18"
+                style={{ width: '100%', height: '10px', marginTop: '2px', marginBottom: '1px' }}
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M 10 9 Q 50 2, 100 9 Q 150 16, 190 9"
+                  fill="none"
+                  stroke="#7EC8A4"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                />
+              </svg>
+
+              {/* "HEALTH" — spaced lighter teal, matching brand */}
               <span
                 style={{
-                  fontFamily: "'Nunito Sans', sans-serif",
+                  fontFamily: "'Nunito Sans', 'Helvetica Neue', Arial, sans-serif",
                   fontWeight: 300,
-                  fontSize: '0.6rem',
+                  fontSize: '0.7rem',
                   color: '#7EC8A4',
-                  letterSpacing: '0.35em',
+                  letterSpacing: '0.38em',
                   textTransform: 'uppercase',
                   lineHeight: 1,
-                  marginTop: '4px',
-                  paddingLeft: '2px',
+                  textAlign: 'center',
                 }}
               >
                 Health
@@ -100,18 +117,20 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-2 text-sm font-['Nunito_Sans'] font-600 rounded transition-colors duration-150 ${
+                className={`px-3 py-2 text-sm rounded transition-colors duration-150 ${
                   location === link.href
-                    ? "text-white bg-white/15"
+                    ? "text-white bg-white/15 font-semibold"
                     : "text-[#C8E6D4] hover:text-white hover:bg-white/10"
                 }`}
+                style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: location === link.href ? 600 : 400 }}
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/intake-forms"
-              className="ml-3 px-4 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm font-['Nunito_Sans'] font-700 rounded transition-colors duration-150 shadow-sm"
+              className="ml-3 px-5 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm rounded transition-colors duration-150 shadow-sm"
+              style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 700 }}
             >
               Start Intake
             </Link>
@@ -136,18 +155,20 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-2.5 text-sm font-['Nunito_Sans'] font-600 rounded transition-colors ${
+                className={`px-3 py-2.5 text-sm rounded transition-colors ${
                   location === link.href
-                    ? "text-white bg-white/15"
+                    ? "text-white bg-white/15 font-semibold"
                     : "text-[#C8E6D4] hover:text-white hover:bg-white/10"
                 }`}
+                style={{ fontFamily: "'Nunito Sans', sans-serif" }}
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/intake-forms"
-              className="mt-2 px-4 py-3 bg-[#2E8B6E] text-white text-sm font-['Nunito_Sans'] font-700 rounded text-center"
+              className="mt-2 px-4 py-3 bg-[#2E8B6E] text-white text-sm rounded text-center"
+              style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 700 }}
             >
               Start Intake
             </Link>
