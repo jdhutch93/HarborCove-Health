@@ -112,6 +112,34 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* ── QUICK ACTIONS STRIP ── */}
+      <section className="bg-white border-b border-[#D4E8DF] py-5">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+            <p className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-xs uppercase tracking-widest flex-shrink-0 mr-2">Quick Actions</p>
+            <div className="flex flex-wrap gap-3">
+              {[
+                { title: "Start Weight Loss Program", desc: "New patient intake", href: "https://intakeq.com/new/d1pshm", external: true },
+                { title: "Start Ketamine Therapy", desc: "New patient intake", href: "https://intakeq.com/new/hv6pho", external: true },
+                { title: "View All Intake Forms", desc: "All forms", href: "/intake-forms", external: false },
+              ].map(({ title, href, external }) =>
+                external ? (
+                  <a key={title} href={href} target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#F2F7F5] hover:bg-[#D4E8DF] border border-[#D4E8DF] text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm rounded-xl transition-colors group">
+                    {title} <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                  </a>
+                ) : (
+                  <Link key={title} href={href}
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#F2F7F5] hover:bg-[#D4E8DF] border border-[#D4E8DF] text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm rounded-xl transition-colors group">
+                    {title} <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                  </Link>
+                )
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── MAIN CONTENT ── */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -338,35 +366,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Quick Actions */}
-              <div className="space-y-2">
-                <p className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-xs uppercase tracking-wide mb-2">Quick Actions</p>
-                {[
-                  { title: "Start Weight Loss Program", desc: "New patient intake form", href: "https://intakeq.com/new/d1pshm", external: true },
-                  { title: "Start Ketamine Therapy", desc: "New patient intake form", href: "https://intakeq.com/new/hv6pho", external: true },
-                  { title: "View All Intake Forms", desc: "All forms in one place", href: "/intake-forms", external: false },
-                ].map(({ title, desc, href, external }) =>
-                  external ? (
-                    <a key={title} href={href} target="_blank" rel="noopener noreferrer"
-                      className="flex items-center justify-between p-3.5 bg-[#F2F7F5] hover:bg-[#D4E8DF] border border-[#D4E8DF] rounded-xl transition-colors group">
-                      <div>
-                        <p className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm">{title}</p>
-                        <p className="text-[#9CA3AF] font-['Nunito_Sans'] text-xs">{desc}</p>
-                      </div>
-                      <ArrowRight className="w-4 h-4 text-[#2E8B6E] group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                    </a>
-                  ) : (
-                    <Link key={title} href={href}
-                      className="flex items-center justify-between p-3.5 bg-[#F2F7F5] hover:bg-[#D4E8DF] border border-[#D4E8DF] rounded-xl transition-colors group">
-                      <div>
-                        <p className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm">{title}</p>
-                        <p className="text-[#9CA3AF] font-['Nunito_Sans'] text-xs">{desc}</p>
-                      </div>
-                      <ArrowRight className="w-4 h-4 text-[#2E8B6E] group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                    </Link>
-                  )
-                )}
-              </div>
+
             </div>
 
           </div>
