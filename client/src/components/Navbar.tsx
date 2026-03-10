@@ -5,7 +5,7 @@
    ============================================================ */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Anchor } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -38,25 +38,24 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || !isHome
-          ? "bg-[#0B3D6B] shadow-lg"
-          : "bg-[#0B3D6B]/90 backdrop-blur-sm"
+          ? "bg-[#1B5E4B] shadow-lg"
+          : "bg-[#1B5E4B]/90 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded-full bg-[#1A7FA8] flex items-center justify-center flex-shrink-0">
-              <Anchor className="w-4 h-4 text-white" />
-            </div>
-            <div>
-              <span className="font-['Lora'] font-700 text-white text-lg leading-tight block">
-                HarborCove Health
-              </span>
-              <span className="text-[#A9CCE3] text-[10px] font-['Nunito_Sans'] tracking-widest uppercase leading-none block">
-                Yuma, Arizona
-              </span>
-            </div>
+          <Link href="/" className="flex items-center gap-3 group">
+            <img
+              src="/assets/logo-shield.png"
+              alt="HarborCove Health Logo"
+              className="h-10 w-auto object-contain"
+            />
+            <img
+              src="/assets/logo-wordmark.png"
+              alt="HarborCove Health"
+              className="h-8 w-auto object-contain hidden sm:block"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -68,18 +67,18 @@ export default function Navbar() {
                 className={`px-3 py-2 text-sm font-['Nunito_Sans'] font-600 rounded transition-colors duration-150 ${
                   location === link.href
                     ? "text-white bg-white/15"
-                    : "text-[#A9CCE3] hover:text-white hover:bg-white/10"
+                    : "text-[#C8E6D4] hover:text-white hover:bg-white/10"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-            <a
+            <Link
               href="/intake-forms"
-              className="ml-3 px-4 py-2 bg-[#1A7FA8] hover:bg-[#157096] text-white text-sm font-['Nunito_Sans'] font-700 rounded transition-colors duration-150"
+              className="ml-3 px-4 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm font-['Nunito_Sans'] font-700 rounded transition-colors duration-150"
             >
               Start Intake
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -95,7 +94,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-[#0B3D6B] border-t border-white/10 px-4 pb-4">
+        <div className="lg:hidden bg-[#1B5E4B] border-t border-white/10 px-4 pb-4">
           <nav className="flex flex-col gap-1 pt-2">
             {navLinks.map((link) => (
               <Link
@@ -104,18 +103,18 @@ export default function Navbar() {
                 className={`px-3 py-2.5 text-sm font-['Nunito_Sans'] font-600 rounded transition-colors ${
                   location === link.href
                     ? "text-white bg-white/15"
-                    : "text-[#A9CCE3] hover:text-white hover:bg-white/10"
+                    : "text-[#C8E6D4] hover:text-white hover:bg-white/10"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-            <a
+            <Link
               href="/intake-forms"
-              className="mt-2 px-4 py-3 bg-[#1A7FA8] text-white text-sm font-['Nunito_Sans'] font-700 rounded text-center"
+              className="mt-2 px-4 py-3 bg-[#2E8B6E] text-white text-sm font-['Nunito_Sans'] font-700 rounded text-center"
             >
               Start Intake
-            </a>
+            </Link>
           </nav>
         </div>
       )}

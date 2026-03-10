@@ -7,8 +7,8 @@ import { CheckCircle, ArrowRight, Clock, DollarSign, Users, AlertCircle } from "
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const KETAMINE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663376008972/RYC7xDN9pCFSivQkK6hRLg/ketamine-therapy-section-niFvVjeAox3ZFFnhp5gn2H.webp";
-const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663376008972/RYC7xDN9pCFSivQkK6hRLg/hero-infusion-room-muhTfAzx9YraqWpLpt4qDE.webp";
+const KETAMINE_IMG = "/assets/clinic-chair.jpeg";
+const HERO_IMG = "/assets/clinic-treatment-room.jpeg";
 
 export default function KetamineTherapy() {
   return (
@@ -18,16 +18,16 @@ export default function KetamineTherapy() {
       {/* ── PAGE HERO ── */}
       <section className="relative pt-16 min-h-[50vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <img src={HERO_IMG} alt="HarborCove Health infusion room" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B3D6B]/95 via-[#0B3D6B]/80 to-[#0B3D6B]/50" />
+          <img src={HERO_IMG} alt="HarborCove Health treatment room" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1B5E4B]/95 via-[#1B5E4B]/80 to-[#1B5E4B]/50" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <p className="text-[#A9CCE3] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">HarborCove Health</p>
+          <p className="text-[#C8E6D4] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">HarborCove Health</p>
           <h1 className="font-['Lora'] font-700 text-white text-4xl sm:text-5xl leading-tight mb-4">
             IV Ketamine Therapy
           </h1>
           <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-lg max-w-2xl">
-            Evidence-based infusion therapy for treatment-resistant depression and chronic pain — administered under direct medical supervision in Yuma, Arizona.
+            Evidence-based IV ketamine therapy for treatment-resistant depression and chronic pain — administered under direct medical supervision in Yuma, Arizona.
           </p>
         </div>
       </section>
@@ -37,8 +37,8 @@ export default function KetamineTherapy() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-14 items-start">
             <div>
-              <p className="text-[#1A7FA8] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">What Is Ketamine Therapy?</p>
-              <h2 className="section-heading font-['Lora'] font-700 text-[#0B3D6B] text-3xl sm:text-4xl leading-tight mb-6">
+              <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">What Is Ketamine Therapy?</p>
+              <h2 className="section-heading font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl leading-tight mb-6">
                 A Rapid-Acting Treatment for Difficult-to-Treat Conditions
               </h2>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
@@ -61,13 +61,13 @@ export default function KetamineTherapy() {
                   { icon: Clock, label: "Session Duration", value: "45–60 min" },
                   { icon: DollarSign, label: "Per Infusion", value: "$500" },
                 ].map(({ icon: Icon, label, value }) => (
-                  <div key={label} className="bg-[#F4F7FA] rounded-lg p-4 flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-full bg-[#1A7FA8]/10 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-4 h-4 text-[#1A7FA8]" />
+                  <div key={label} className="bg-[#F0FAF5] rounded-lg p-4 flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-full bg-[#2E8B6E]/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-4 h-4 text-[#2E8B6E]" />
                     </div>
                     <div>
                       <p className="text-[#374151] font-['Nunito_Sans'] text-xs">{label}</p>
-                      <p className="text-[#0B3D6B] font-['Lora'] font-700 text-base">{value}</p>
+                      <p className="text-[#1B5E4B] font-['Lora'] font-700 text-base">{value}</p>
                     </div>
                   </div>
                 ))}
@@ -81,39 +81,42 @@ export default function KetamineTherapy() {
       <section className="py-20 bg-[#F4F7FA] dot-grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-[#1A7FA8] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Conditions We Treat</p>
-            <h2 className="font-['Lora'] font-700 text-[#0B3D6B] text-3xl sm:text-4xl">Who Can Benefit from Ketamine Therapy?</h2>
+            <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Conditions We Treat</p>
+            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl">Who Can Benefit from Ketamine Therapy?</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-xl p-8 shadow-sm border border-[#E8EEF4]">
-              <div className="w-10 h-10 rounded-full bg-[#0B3D6B]/10 flex items-center justify-center mb-4">
-                <span className="text-[#0B3D6B] font-['Lora'] font-700 text-sm">01</span>
+              <div className="w-10 h-10 rounded-full bg-[#1B5E4B]/10 flex items-center justify-center mb-4">
+                <span className="text-[#1B5E4B] font-['Lora'] font-700 text-sm">01</span>
               </div>
-              <h3 className="font-['Lora'] font-700 text-[#0B3D6B] text-xl mb-3">Treatment-Resistant Depression</h3>
+              <h3 className="font-['Lora'] font-700 text-[#1B5E4B] text-xl mb-3">Treatment-Resistant Depression</h3>
               <p className="text-[#374151] font-['Nunito_Sans'] text-sm leading-relaxed mb-4">
                 Defined as depression that has not responded adequately to at least two different antidepressant medications at adequate doses and duration. Ketamine has demonstrated significant efficacy in this population, with response rates often exceeding those of traditional approaches.
               </p>
               <ul className="space-y-2">
-                {["Major depressive disorder (MDD)", "Bipolar depression (with psychiatric oversight)", "Suicidal ideation (acute stabilization)"].map(item => (
+                {[
+                  "Major depressive disorder (MDD) — treatment-resistant",
+                  "Bipolar depression (with psychiatric oversight)",
+                ].map(item => (
                   <li key={item} className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#1A7FA8] mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-[#2E8B6E] mt-0.5 flex-shrink-0" />
                     <span className="text-[#374151] font-['Nunito_Sans'] text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="bg-white rounded-xl p-8 shadow-sm border border-[#E8EEF4]">
-              <div className="w-10 h-10 rounded-full bg-[#0B3D6B]/10 flex items-center justify-center mb-4">
-                <span className="text-[#0B3D6B] font-['Lora'] font-700 text-sm">02</span>
+              <div className="w-10 h-10 rounded-full bg-[#1B5E4B]/10 flex items-center justify-center mb-4">
+                <span className="text-[#1B5E4B] font-['Lora'] font-700 text-sm">02</span>
               </div>
-              <h3 className="font-['Lora'] font-700 text-[#0B3D6B] text-xl mb-3">Chronic Pain Syndromes</h3>
+              <h3 className="font-['Lora'] font-700 text-[#1B5E4B] text-xl mb-3">Chronic Pain Syndromes</h3>
               <p className="text-[#374151] font-['Nunito_Sans'] text-sm leading-relaxed mb-4">
                 Ketamine's NMDA receptor antagonism can interrupt central sensitization — the process by which the nervous system amplifies pain signals. This makes it a valuable option for patients with chronic pain conditions that have not responded to conventional pain management.
               </p>
               <ul className="space-y-2">
                 {["Complex regional pain syndrome (CRPS)", "Fibromyalgia", "Neuropathic pain", "Refractory chronic pain"].map(item => (
                   <li key={item} className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#1A7FA8] mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-[#2E8B6E] mt-0.5 flex-shrink-0" />
                     <span className="text-[#374151] font-['Nunito_Sans'] text-sm">{item}</span>
                   </li>
                 ))}
@@ -128,10 +131,10 @@ export default function KetamineTherapy() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <p className="text-[#1A7FA8] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Treatment Protocol</p>
-              <h2 className="font-['Lora'] font-700 text-[#0B3D6B] text-3xl sm:text-4xl mb-4">What to Expect</h2>
+              <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Treatment Protocol</p>
+              <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl mb-4">What to Expect</h2>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base">
-                Our protocol follows evidence-based guidelines for ketamine infusion therapy. Every patient's treatment plan is individualized based on their diagnosis, response, and clinical needs.
+                Our protocol follows evidence-based guidelines for IV ketamine therapy. Every patient's treatment plan is individualized based on their diagnosis, response, and clinical needs.
               </p>
             </div>
 
@@ -159,11 +162,11 @@ export default function KetamineTherapy() {
                 },
               ].map(({ step, title, description }) => (
                 <div key={step} className="flex gap-5">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#0B3D6B] flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1B5E4B] flex items-center justify-center">
                     <span className="text-white font-['Lora'] font-700 text-xs">{step}</span>
                   </div>
                   <div className="flex-1 pb-6 border-b border-[#E8EEF4] last:border-0">
-                    <h3 className="font-['Lora'] font-700 text-[#0B3D6B] text-lg mb-2">{title}</h3>
+                    <h3 className="font-['Lora'] font-700 text-[#1B5E4B] text-lg mb-2">{title}</h3>
                     <p className="text-[#374151] font-['Nunito_Sans'] text-sm leading-relaxed">{description}</p>
                   </div>
                 </div>
@@ -174,13 +177,13 @@ export default function KetamineTherapy() {
       </section>
 
       {/* ── COLLABORATIVE MODEL ── */}
-      <section className="py-16 bg-[#0B3D6B]">
+      <section className="py-16 bg-[#1B5E4B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <div className="flex items-start gap-3 mb-4">
-                <Users className="w-6 h-6 text-[#A9CCE3] flex-shrink-0 mt-0.5" />
-                <p className="text-[#A9CCE3] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase">Collaborative Psychiatric Model</p>
+                <Users className="w-6 h-6 text-[#C8E6D4] flex-shrink-0 mt-0.5" />
+                <p className="text-[#C8E6D4] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase">Collaborative Psychiatric Model</p>
               </div>
               <h2 className="font-['Lora'] font-700 text-white text-2xl sm:text-3xl mb-4">
                 Depression Treatment Requires a Psychiatric Provider
@@ -189,10 +192,10 @@ export default function KetamineTherapy() {
                 Patients receiving ketamine for depression must be under the active care of a psychiatrist or psychiatric mental health nurse practitioner (PMHNP). This provider manages your mental health diagnosis and treatment plan while HarborCove Health performs the infusion administration and monitoring.
               </p>
               <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-base leading-relaxed mb-6">
-                If you do not currently have a psychiatric provider, we can coordinate a psychiatric evaluation for <strong className="text-white">$310</strong> to assess your appropriateness for ketamine therapy and establish the necessary collaborative care relationship.
+                If you do not currently have a psychiatric provider, we can coordinate a psychiatric evaluation for <strong className="text-white">$310</strong> to assess your appropriateness for ketamine therapy and establish the collaborative care relationship required for treatment.
               </p>
               <div className="flex items-start gap-3 bg-white/10 rounded-lg p-4">
-                <AlertCircle className="w-5 h-5 text-[#A9CCE3] flex-shrink-0 mt-0.5" />
+                <AlertCircle className="w-5 h-5 text-[#C8E6D4] flex-shrink-0 mt-0.5" />
                 <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-sm">
                   Ketamine for chronic pain does not require a psychiatric provider. Patients seeking pain management may proceed directly through the standard intake process.
                 </p>
@@ -207,9 +210,9 @@ export default function KetamineTherapy() {
               >
                 <div>
                   <p className="text-white font-['Lora'] font-600 text-base mb-0.5">Ketamine Intake Form</p>
-                  <p className="text-[#A9CCE3] font-['Nunito_Sans'] text-sm">For new patients starting ketamine therapy</p>
+                  <p className="text-[#C8E6D4] font-['Nunito_Sans'] text-sm">For new patients starting ketamine therapy</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-[#A9CCE3] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 text-[#C8E6D4] group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="https://intakeq.com/new/5mgqbf"
@@ -219,19 +222,19 @@ export default function KetamineTherapy() {
               >
                 <div>
                   <p className="text-white font-['Lora'] font-600 text-base mb-0.5">Maintenance Reorder Form</p>
-                  <p className="text-[#A9CCE3] font-['Nunito_Sans'] text-sm">For established patients scheduling maintenance infusions</p>
+                  <p className="text-[#C8E6D4] font-['Nunito_Sans'] text-sm">For established patients scheduling maintenance infusions</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-[#A9CCE3] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 text-[#C8E6D4] group-hover:translate-x-1 transition-transform" />
               </a>
               <Link
                 href="/provider-referral"
-                className="flex items-center justify-between p-5 bg-[#1A7FA8]/30 hover:bg-[#1A7FA8]/40 border border-[#1A7FA8]/40 rounded-xl transition-colors group"
+                className="flex items-center justify-between p-5 bg-[#2E8B6E]/40 hover:bg-[#2E8B6E]/60 border border-[#2E8B6E]/50 rounded-xl transition-colors group"
               >
                 <div>
                   <p className="text-white font-['Lora'] font-600 text-base mb-0.5">Provider Referral</p>
-                  <p className="text-[#A9CCE3] font-['Nunito_Sans'] text-sm">For psychiatrists and mental health providers</p>
+                  <p className="text-[#C8E6D4] font-['Nunito_Sans'] text-sm">For psychiatrists and pain management providers</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-[#A9CCE3] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 text-[#C8E6D4] group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>
