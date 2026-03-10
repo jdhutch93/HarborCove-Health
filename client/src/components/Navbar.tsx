@@ -1,7 +1,7 @@
 /* ============================================================
    HARBORCOVE HEALTH — Navbar
    Design: Harbor Light — sticky, transparent-to-solid on scroll
-   Navy background, Lora logo, Nunito Sans nav links
+   Teal/green background, large prestigious logo, Lora + Nunito Sans
    ============================================================ */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
@@ -38,27 +38,64 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || !isHome
-          ? "bg-[#1B5E4B] shadow-lg"
+          ? "bg-[#1B5E4B] shadow-xl"
           : "bg-[#1B5E4B]/90 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-18">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group flex-shrink-0">
+        <div className="flex items-center justify-between" style={{ height: '76px' }}>
+
+          {/* ── LOGO ── */}
+          <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
+            {/* Shield — transparent background, large and commanding */}
             <img
-              src="/assets/logo-shield.png"
-              alt="HarborCove Health Logo"
-              className="h-10 w-10 object-contain flex-shrink-0 drop-shadow-sm"
+              src="/assets/logo-shield-transparent.png"
+              alt="HarborCove Health"
+              style={{
+                height: '60px',
+                width: '60px',
+                objectFit: 'contain',
+                flexShrink: 0,
+                filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.35))',
+                transition: 'transform 0.3s ease',
+              }}
+              className="group-hover:scale-105"
             />
-            <div className="hidden sm:flex flex-col leading-none">
-              <span className="font-['Lora'] font-700 text-white text-lg tracking-tight leading-tight">HarborCove</span>
-              <span className="font-['Nunito_Sans'] font-400 text-[#C8E6D4] text-xs tracking-[0.18em] uppercase leading-tight">Health</span>
+            {/* Wordmark — elegant serif + spaced caps */}
+            <div className="hidden sm:flex flex-col justify-center" style={{ gap: '1px' }}>
+              <span
+                style={{
+                  fontFamily: "'Lora', Georgia, serif",
+                  fontWeight: 700,
+                  fontSize: '1.5rem',
+                  color: '#ffffff',
+                  letterSpacing: '-0.01em',
+                  lineHeight: 1,
+                  textShadow: '0 1px 4px rgba(0,0,0,0.2)',
+                }}
+              >
+                HarborCove
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Nunito Sans', sans-serif",
+                  fontWeight: 300,
+                  fontSize: '0.6rem',
+                  color: '#7EC8A4',
+                  letterSpacing: '0.35em',
+                  textTransform: 'uppercase',
+                  lineHeight: 1,
+                  marginTop: '4px',
+                  paddingLeft: '2px',
+                }}
+              >
+                Health
+              </span>
             </div>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          {/* ── DESKTOP NAV ── */}
+          <nav className="hidden lg:flex items-center gap-0.5">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -74,13 +111,13 @@ export default function Navbar() {
             ))}
             <Link
               href="/intake-forms"
-              className="ml-3 px-4 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm font-['Nunito_Sans'] font-700 rounded transition-colors duration-150"
+              className="ml-3 px-4 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm font-['Nunito_Sans'] font-700 rounded transition-colors duration-150 shadow-sm"
             >
               Start Intake
             </Link>
           </nav>
 
-          {/* Mobile menu button */}
+          {/* ── MOBILE MENU BUTTON ── */}
           <button
             className="lg:hidden p-2 text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -91,7 +128,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* ── MOBILE MENU ── */}
       {mobileOpen && (
         <div className="lg:hidden bg-[#1B5E4B] border-t border-white/10 px-4 pb-4">
           <nav className="flex flex-col gap-1 pt-2">
