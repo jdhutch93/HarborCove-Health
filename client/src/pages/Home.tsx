@@ -40,11 +40,11 @@ export default function Home() {
             </div>
 
             <h1 className="font-['Lora'] font-700 text-white text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6 animate-fade-up-delay-1">
-              A New Path Forward for Depression, Pain & GLP-1 Assisted Weight Loss
+              A New Path Forward — Because You Deserve More Than "We've Tried Everything"
             </h1>
 
             <p className="text-[#D6E8F5] text-lg sm:text-xl font-['Nunito_Sans'] font-400 leading-relaxed mb-8 animate-fade-up-delay-2">
-              HarborCove Health provides evidence-based IV ketamine therapy for treatment-resistant depression and chronic pain, and compounded GLP-1 medication programs for medically supervised weight loss — supervised by an advanced practice provider with a background in emergency medicine.
+              At HarborCove Health, we believe that patients struggling with treatment-resistant depression, chronic pain, and weight loss deserve access to the same high-quality, evidence-based medicine that has transformed outcomes elsewhere — not as a last resort, but as a right. We exist for the patients who have been told there is nothing left to try. We are here to prove otherwise.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-3">
