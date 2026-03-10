@@ -24,8 +24,40 @@ export default function Footer() {
             {/* Brand */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-4">
-                <img src="/assets/logo-shield.png" alt="HarborCove Health" className="h-10 w-auto object-contain" />
-                <img src="/assets/logo-wordmark.png" alt="HarborCove Health" className="h-8 w-auto object-contain" />
+                <img
+                  src="/assets/logo-shield-transparent.png"
+                  alt="HarborCove Health"
+                  style={{
+                    height: '72px',
+                    width: '72px',
+                    objectFit: 'contain',
+                    flexShrink: 0,
+                    filter: 'drop-shadow(0 3px 10px rgba(0,0,0,0.4))',
+                  }}
+                />
+                <div className="flex flex-col justify-center" style={{ gap: 0 }}>
+                  <span style={{
+                    fontFamily: "'Lora', Georgia, serif",
+                    fontWeight: 400,
+                    fontSize: '1.5rem',
+                    color: '#ffffff',
+                    letterSpacing: '-0.02em',
+                    lineHeight: 1,
+                  }}>HarborCove</span>
+                  <svg viewBox="0 0 180 14" style={{ width: '100%', height: '9px', marginTop: '2px', marginBottom: '2px' }} preserveAspectRatio="none">
+                    <path d="M 6 7 Q 45 1, 90 7 Q 135 13, 174 7" fill="none" stroke="#7EC8A4" strokeWidth="1.4" strokeLinecap="round" />
+                  </svg>
+                  <span style={{
+                    fontFamily: "'Nunito Sans', sans-serif",
+                    fontWeight: 300,
+                    fontSize: '0.6rem',
+                    color: '#7EC8A4',
+                    letterSpacing: '0.38em',
+                    textTransform: 'uppercase',
+                    lineHeight: 1,
+                    textAlign: 'center',
+                  }}>Health</span>
+                </div>
               </div>
               <p className="text-[#C8E6D4] text-sm font-['Nunito_Sans'] leading-relaxed mb-4">
                 Evidence-based ketamine therapy and GLP-1 weight management in Yuma, Arizona.

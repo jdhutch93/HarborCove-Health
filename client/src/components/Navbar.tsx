@@ -1,6 +1,7 @@
 /* ============================================================
    HARBORCOVE HEALTH — Navbar
-   Large prestigious logo: shield + exact brand wordmark
+   Large prestigious logo: big shield + exact brand wordmark
+   Reference: intakeq.com form header with large shield
    ============================================================ */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
@@ -42,65 +43,65 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between" style={{ height: '88px' }}>
+        <div className="flex items-center justify-between" style={{ height: '100px' }}>
 
           {/* ── LOGO ── */}
           <Link href="/" className="flex items-center gap-4 group flex-shrink-0">
-            {/* Large shield — transparent, no white box */}
+            {/* LARGE shield — transparent, no white box, high detail visible */}
             <img
               src="/assets/logo-shield-transparent.png"
-              alt="HarborCove Health Shield"
+              alt="HarborCove Health"
               style={{
-                height: '76px',
-                width: '76px',
+                height: '92px',
+                width: '92px',
                 objectFit: 'contain',
                 flexShrink: 0,
-                filter: 'drop-shadow(0 3px 10px rgba(0,0,0,0.4))',
+                filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.45))',
                 transition: 'transform 0.3s ease',
               }}
               className="group-hover:scale-105"
             />
 
-            {/* Wordmark — exact brand typography */}
+            {/* Wordmark — exact brand typography matching provided logo */}
             <div className="hidden sm:flex flex-col justify-center" style={{ gap: 0 }}>
-              {/* "HarborCove" — large elegant serif matching brand */}
+              {/* "HarborCove" — large elegant serif */}
               <span
                 style={{
                   fontFamily: "'Lora', Georgia, 'Times New Roman', serif",
                   fontWeight: 400,
-                  fontSize: '2rem',
+                  fontSize: '2.4rem',
                   color: '#ffffff',
                   letterSpacing: '-0.02em',
                   lineHeight: 1,
-                  textShadow: '0 1px 6px rgba(0,0,0,0.25)',
+                  textShadow: '0 1px 8px rgba(0,0,0,0.3)',
                 }}
               >
                 HarborCove
               </span>
 
-              {/* Wave swoosh SVG — matches the brand wave */}
+              {/* Wave swoosh SVG */}
               <svg
-                viewBox="0 0 200 18"
-                style={{ width: '100%', height: '10px', marginTop: '2px', marginBottom: '1px' }}
+                viewBox="0 0 220 16"
+                style={{ width: '100%', height: '11px', marginTop: '3px', marginBottom: '2px' }}
                 preserveAspectRatio="none"
               >
                 <path
-                  d="M 10 9 Q 50 2, 100 9 Q 150 16, 190 9"
+                  d="M 8 8 Q 55 1, 110 8 Q 165 15, 212 8"
                   fill="none"
                   stroke="#7EC8A4"
-                  strokeWidth="1.5"
+                  strokeWidth="1.6"
                   strokeLinecap="round"
                 />
               </svg>
 
-              {/* "HEALTH" — spaced lighter teal, matching brand */}
+              {/* "HEALTH" — spaced lighter teal */}
               <span
                 style={{
                   fontFamily: "'Nunito Sans', 'Helvetica Neue', Arial, sans-serif",
                   fontWeight: 300,
-                  fontSize: '0.7rem',
+                  fontSize: '0.72rem',
                   color: '#7EC8A4',
-                  letterSpacing: '0.38em',
+                  letterSpacing: '0.42em',
                   textTransform: 'uppercase',
                   lineHeight: 1,
                   textAlign: 'center',
