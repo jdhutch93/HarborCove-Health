@@ -1,5 +1,5 @@
 {
-  "buildCommand": "vite build",
+  "buildCommand": "npx vite build --config vite.config.prod.ts",
   "outputDirectory": "dist/public",
   "installCommand": "pnpm install",
   "framework": "vite",
