@@ -40,7 +40,7 @@ export default function Home() {
             </div>
 
             <h1 className="font-['Lora'] font-700 text-white text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6 animate-fade-up-delay-1">
-              A New Path Forward — Because You Deserve More Than "We've Tried Everything"
+              A New Path Forward for Depression, Pain & GLP-1 Assisted Weight Loss
             </h1>
 
             <p className="text-[#D6E8F5] text-lg sm:text-xl font-['Nunito_Sans'] font-400 leading-relaxed mb-8 animate-fade-up-delay-2">
