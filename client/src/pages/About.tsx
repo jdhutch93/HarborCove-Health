@@ -126,7 +126,7 @@ export default function About() {
             <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">About the Clinic</p>
             <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl mb-6">Serving Yuma, Arizona</h2>
             <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
-              HarborCove Health is an outpatient medical clinic located at 3970 W 36th St Ste 209, Yuma, AZ 85364. We operate as a cash-pay practice, which means we are not contracted with insurance companies. This allows us to focus entirely on delivering the care our patients need without the administrative constraints that often limit treatment options in insurance-based settings.
+              HarborCove Health is an outpatient medical clinic located at 3970 W 24th St Ste 209, Yuma, AZ 85364. We operate as a cash-pay practice, which means we are not contracted with insurance companies. This allows us to focus entirely on delivering the care our patients need without the administrative constraints that often limit treatment options in insurance-based settings.
             </p>
             <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-8">
               We serve patients from throughout the Yuma region and welcome referrals from providers across southwestern Arizona. Our clinic is designed to be a calm, private, and professional environment where patients feel safe and supported throughout their treatment.

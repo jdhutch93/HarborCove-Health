@@ -129,7 +129,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-2.5">
                   <MapPin className="w-4 h-4 text-[#7EC8A4] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#C8E6D4] text-sm font-['Nunito_Sans']">3970 W 36th St Ste 209<br />Yuma, AZ 85364</span>
+                  <span className="text-[#C8E6D4] text-sm font-['Nunito_Sans']">3970 W 24th St Ste 209<br />Yuma, AZ 85364</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <Phone className="w-4 h-4 text-[#7EC8A4] mt-0.5 flex-shrink-0" />
