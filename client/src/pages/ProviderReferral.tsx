@@ -85,7 +85,7 @@ export default function ProviderReferral() {
             <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Who Can Refer</p>
             <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl">Appropriate Referring Providers</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
             {[
               { icon: Users, title: "Psychiatrists", desc: "MD or DO psychiatrists managing patients with treatment-resistant depression or mood disorders." },
               { icon: Shield, title: "PMHNPs", desc: "Psychiatric mental health nurse practitioners providing ongoing psychiatric management." },
