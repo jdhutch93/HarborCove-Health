@@ -44,7 +44,7 @@ export default function Home() {
             </h1>
 
             <p className="text-[#D6E8F5] text-lg sm:text-xl font-['Nunito_Sans'] font-400 leading-relaxed mb-8 animate-fade-up-delay-2">
-              At HarborCove Health, we believe that patients struggling with treatment-resistant depression, chronic pain, and weight loss deserve access to the same high-quality, evidence-based medicine that has transformed outcomes elsewhere — not as a last resort, but as a right. We exist for the patients who have been told there is nothing left to try. We are here to prove otherwise.
+              HarborCove Health provides evidence-based IV ketamine therapy and compounded GLP-1 weight management programs in Yuma, Arizona. Our focus is on patients who have struggled to find effective care — those living with treatment-resistant depression, chronic pain, or weight challenges that haven't responded to conventional approaches. You deserve access to medicine that works.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-3">
