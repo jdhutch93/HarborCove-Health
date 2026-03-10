@@ -86,47 +86,37 @@ export default function Contact() {
           <div className="flex items-center gap-2 mb-4">
             <Lock className="w-4 h-4 text-[#2E8B6E]" />
             <span className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm">
-              All contact methods on this page are HIPAA-compliant
+              Need to share medical information? Use a HIPAA-compliant option below.
             </span>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-6">
             {/* Spruce */}
-            <div className="flex-1 flex items-start gap-3 bg-white border border-[#D4E8DF] rounded-2xl p-4">
-              <div className="w-9 h-9 rounded-xl bg-[#1B5E4B]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <MessageSquare className="w-4 h-4 text-[#1B5E4B]" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm">Secure Message via Spruce</p>
-                <p className="text-[#6B7280] font-['Nunito_Sans'] text-xs mt-0.5 leading-relaxed">
-                  Spruce is our HIPAA-compliant secure messaging platform — like texting, but private and encrypted. No app download needed.
-                </p>
-                <a
-                  href={SPRUCE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 mt-2 text-[#2E8B6E] hover:text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-xs transition-colors"
-                >
-                  Open Spruce <ExternalLink className="w-3 h-3" />
-                </a>
-              </div>
+            <div className="flex flex-col gap-2">
+              <a
+                href={SPRUCE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 bg-[#1B5E4B] hover:bg-[#174f3e] text-white font-['Nunito_Sans'] font-700 text-sm rounded-xl transition-colors"
+              >
+                <MessageSquare className="w-4 h-4" />
+                Message Us on Spruce
+              </a>
+                <p className="text-[#6B7280] font-['Nunito_Sans'] text-xs leading-relaxed max-w-xs">
+                Spruce is our secure messaging platform — like texting, but HIPAA-compliant and encrypted. No app download needed. <span className="inline-flex items-center gap-0.5 text-[#2E8B6E] font-700"><Lock className="w-3 h-3" /> HIPAA-Compliant</span>
+              </p>
             </div>
             {/* Email */}
-            <div className="flex-1 flex items-start gap-3 bg-white border border-[#D4E8DF] rounded-2xl p-4">
-              <div className="w-9 h-9 rounded-xl bg-[#1B5E4B]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Mail className="w-4 h-4 text-[#1B5E4B]" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm">HIPAA-Compliant Email</p>
-                <p className="text-[#6B7280] font-['Nunito_Sans'] text-xs mt-0.5 leading-relaxed">
-                  Our email is hosted on Google Workspace with a signed Business Associate Agreement — safe for clinical communication.
-                </p>
-                <a
-                  href="mailto:jdhutch93@HarborCoveHealth.com"
-                  className="inline-flex items-center gap-1.5 mt-2 text-[#2E8B6E] hover:text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-xs transition-colors break-all"
-                >
-                  jdhutch93@HarborCoveHealth.com <ExternalLink className="w-3 h-3 flex-shrink-0" />
-                </a>
-              </div>
+            <div className="flex flex-col gap-2">
+              <a
+                href="mailto:jdhutch93@HarborCoveHealth.com"
+                className="inline-flex items-center gap-2 px-5 py-3 bg-white hover:bg-[#E8F5EE] border border-[#D4E8DF] text-[#1B5E4B] font-['Nunito_Sans'] font-700 text-sm rounded-xl transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                Email Us Securely
+              </a>
+                <p className="text-[#6B7280] font-['Nunito_Sans'] text-xs leading-relaxed max-w-xs">
+                Google Workspace with signed BAA — safe for clinical communication. <span className="inline-flex items-center gap-0.5 text-[#2E8B6E] font-700"><Lock className="w-3 h-3" /> HIPAA-Compliant</span>
+              </p>
             </div>
           </div>
         </div>
@@ -170,10 +160,12 @@ export default function Contact() {
               <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-xs tracking-widest uppercase mb-2">
                 General Inquiries
               </p>
-              <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl mb-2">
-                Send Us a Message
-              </h2>
-              <p className="text-[#6B7280] font-['Nunito_Sans'] text-sm mb-1">
+               <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-2xl sm:text-3xl mb-2">Send Us a Message</h2>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-50 border border-amber-200 rounded-lg mb-3">
+                <svg className="w-3.5 h-3.5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" /></svg>
+                <span className="text-amber-700 font-['Nunito_Sans'] font-700 text-xs">General inquiries only — not HIPAA-compliant. Do not include medical information.</span>
+              </div>
+              <p className="text-[#6B7280] font-['Nunito_Sans'] text-sm leading-relaxed">
                 Use this form for general questions, scheduling inquiries, or non-clinical communication.
               </p>
               <div className="flex items-start gap-2 bg-[#FFF8E7] border border-[#F5D87A] rounded-xl px-4 py-3 mb-6">
