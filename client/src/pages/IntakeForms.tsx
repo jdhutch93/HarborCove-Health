@@ -211,6 +211,15 @@ export default function IntakeForms() {
                   {i > 0 && <span className="text-[#D4E8DF] mx-1">|</span>}
                   <a
                     href={`#${s.anchorId}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const el = document.getElementById(s.anchorId);
+                      if (el) {
+                        const offset = 80;
+                        const top = el.getBoundingClientRect().top + window.scrollY - offset;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                      }
+                    }}
                     className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-['Nunito_Sans'] font-700 text-[#1B5E4B] hover:bg-[#F2F7F5] whitespace-nowrap transition-colors"
                   >
                     <Icon className="w-4 h-4" /> {s.navLabel}
@@ -221,6 +230,15 @@ export default function IntakeForms() {
             <span className="text-[#D4E8DF] mx-1">|</span>
             <a
               href="#providers"
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.getElementById('providers');
+                if (el) {
+                  const offset = 80;
+                  const top = el.getBoundingClientRect().top + window.scrollY - offset;
+                  window.scrollTo({ top, behavior: 'smooth' });
+                }
+              }}
               className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-['Nunito_Sans'] font-700 text-[#1B5E4B] hover:bg-[#F2F7F5] whitespace-nowrap transition-colors"
             >
               <Stethoscope className="w-4 h-4" /> Referring Providers
