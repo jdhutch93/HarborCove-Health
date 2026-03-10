@@ -102,7 +102,7 @@ export default function Contact() {
                 Message Us on Spruce
               </a>
                 <p className="text-[#6B7280] font-['Nunito_Sans'] text-xs leading-relaxed max-w-xs">
-                Spruce is our secure messaging platform — like texting, but HIPAA-compliant and encrypted. No app download needed. <span className="inline-flex items-center gap-0.5 text-[#2E8B6E] font-700"><Lock className="w-3 h-3" /> HIPAA-Compliant</span>
+                Spruce is our secure messaging platform — HIPAA-compliant and encrypted. Download the free Spruce app to get started. <span className="inline-flex items-center gap-0.5 text-[#2E8B6E] font-700"><Lock className="w-3 h-3" /> HIPAA-Compliant</span>
               </p>
             </div>
             {/* Email */}
@@ -304,7 +304,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <p className="text-[#C8E6D4] font-['Nunito_Sans'] text-sm leading-relaxed mb-4">
-                  Spruce is our HIPAA-compliant secure messaging platform. Send texts, photos, or clinical questions directly to our team — no app download required.
+                  Spruce is our HIPAA-compliant secure messaging platform. Send texts, photos, or clinical questions directly to our team. Download the free Spruce app to get started.
                 </p>
                 <a
                   href={SPRUCE_URL}
