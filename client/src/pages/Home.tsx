@@ -8,9 +8,9 @@ import { ArrowRight, CheckCircle, Shield, Users, Award, ChevronRight } from "luc
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const HERO_IMG = "/assets/clinic-hero.jpeg";
+const HERO_IMG = "/assets/gen_person_hammock.jpg";
 const KETAMINE_IMG = "/assets/clinic-chair.jpeg";
-const GLP1_IMG = "/assets/gen_glp_fit_person.jpg";
+const GLP1_IMG = "/assets/gen_glp_hero.jpg";
 const COLLAB_IMG = "/assets/gen_lighthouse_harbor.jpg";
 
 export default function Home() {
