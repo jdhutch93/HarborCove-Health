@@ -179,7 +179,7 @@ export default function WeightManagement() {
               Start GLP-1 Intake <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="https://intakeq.com/new/swsdkp"
+              href="https://intakeq.com/new/d1pshm"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#2E8B6E] hover:bg-[#267A60] text-white font-['Nunito_Sans'] font-700 text-base rounded transition-colors"
@@ -279,7 +279,7 @@ export default function WeightManagement() {
                 Start GLP-1 Intake Form <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="https://intakeq.com/new/swsdkp"
+                href="https://intakeq.com/new/d1pshm"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#2E8B6E] hover:bg-[#267A60] text-white font-['Nunito_Sans'] font-700 text-base rounded transition-colors"
