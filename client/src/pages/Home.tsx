@@ -210,25 +210,25 @@ export default function Home() {
               <img src="/assets/clinic-chair.jpeg" alt="HarborCove infusion suite" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-xl overflow-hidden aspect-square shadow-md">
-              <img src="/assets/gen_calm_lake_morning.jpg" alt="Calm morning lake" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="/assets/clinic-room-1.jpeg" alt="HarborCove clinic" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-xl overflow-hidden aspect-square shadow-md">
               <img src="/assets/clinic-treatment-room.jpeg" alt="HarborCove treatment room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-xl overflow-hidden aspect-square shadow-md">
-              <img src="/assets/gen_misty_forest_path.jpg" alt="Peaceful forest path" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="/assets/clinic-room-2.jpeg" alt="HarborCove clinic room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-xl overflow-hidden aspect-square shadow-md hidden md:block">
-              <img src="/assets/gen_person_hammock.jpg" alt="Relaxing in nature" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="/assets/clinic-room-3.jpeg" alt="HarborCove clinic" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-xl overflow-hidden aspect-square shadow-md hidden md:block">
               <img src="/assets/clinic-waiting-room-1.jpeg" alt="HarborCove waiting room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-xl overflow-hidden aspect-square shadow-md hidden md:block">
-              <img src="/assets/gen_ocean_sunrise.jpg" alt="Ocean sunrise" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="/assets/clinic-room-4.jpeg" alt="HarborCove clinic" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-xl overflow-hidden aspect-square shadow-md hidden md:block">
-              <img src="/assets/gen_hands_tea.jpg" alt="Calm and comfort" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="/assets/clinic-waiting-room-2.jpeg" alt="HarborCove lobby" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
