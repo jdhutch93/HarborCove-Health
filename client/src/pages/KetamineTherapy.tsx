@@ -7,8 +7,10 @@ import { CheckCircle, ArrowRight, Clock, DollarSign, Users, AlertCircle } from "
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const KETAMINE_IMG = "/assets/clinic-chair.jpeg";
-const HERO_IMG = "/assets/clinic-treatment-room.jpeg";
+const KETAMINE_IMG = "/assets/gen_infusion_chair_cozy.jpg";
+const HERO_IMG = "/assets/gen_person_hammock.jpg";
+const CALM_IMG = "/assets/gen_calm_lake_morning.jpg";
+const CLINIC_IMG = "/assets/clinic-chair.jpeg";
 
 export default function KetamineTherapy() {
   return (
@@ -172,6 +174,19 @@ export default function KetamineTherapy() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── ATMOSPHERE PHOTO BANNER ── */}
+      <section className="relative h-64 overflow-hidden">
+        <img src={CALM_IMG} alt="Calm lake at dawn" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B5E4B]/80 via-[#1B5E4B]/50 to-transparent flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="font-['Lora'] italic text-white text-2xl sm:text-3xl max-w-lg leading-snug">
+              "Relief that arrives not in weeks, but in hours."
+            </p>
+            <p className="text-[#C8E6D4] font-['Nunito_Sans'] text-sm mt-2">IV Ketamine — evidence-based, supervised, and personalized.</p>
           </div>
         </div>
       </section>

@@ -6,7 +6,8 @@ import { CheckCircle, ArrowRight, Stethoscope, ClipboardList, TrendingDown, Refr
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const GLP1_IMG = "/assets/clinic-waiting-room-1.jpeg";
+const GLP1_IMG = "/assets/gen_meditation_nature.jpg";
+const FLOWERS_IMG = "/assets/gen_flowers_hill.jpg";
 
 export default function WeightManagement() {
   return (
@@ -98,6 +99,19 @@ export default function WeightManagement() {
                 If you are uncomfortable with self-administration, you are welcome to come to the clinic each week for your injection. Our team will administer your dose in a comfortable, professional setting.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── ATMOSPHERE PHOTO BANNER ── */}
+      <section className="relative h-64 overflow-hidden">
+        <img src={FLOWERS_IMG} alt="Person relaxing in a field of wildflowers" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B5E4B]/80 via-[#1B5E4B]/50 to-transparent flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="font-['Lora'] italic text-white text-2xl sm:text-3xl max-w-lg leading-snug">
+              "A healthier you — supported every step of the way."
+            </p>
+            <p className="text-[#C8E6D4] font-['Nunito_Sans'] text-sm mt-2">Compounded GLP-1 therapy — supervised, transparent, and delivered to your door.</p>
           </div>
         </div>
       </section>

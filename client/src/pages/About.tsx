@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const HEADSHOT_IMG = "/assets/provider-headshot.jpeg";
+const LIGHTHOUSE_IMG = "/assets/gen_lighthouse_harbor.jpg";
 
 export default function About() {
   return (
@@ -115,6 +116,42 @@ export default function About() {
                 <p className="text-[#374151] font-['Nunito_Sans'] text-sm leading-relaxed">{description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CLINIC PHOTO GALLERY ── */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-center text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-8">Inside Our Clinic</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md col-span-2 md:col-span-1 md:row-span-2">
+              <img src="/assets/clinic-chair.jpeg" alt="HarborCove infusion chair" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+              <img src="/assets/clinic-treatment-room.jpeg" alt="HarborCove treatment room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+              <img src="/assets/clinic-waiting-room-1.jpeg" alt="HarborCove waiting room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+              <img src="/assets/gen_cozy_reading_nook.jpg" alt="Calm and comfortable environment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+              <img src="/assets/clinic-waiting-room-2.jpeg" alt="HarborCove lobby" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── ATMOSPHERE BANNER ── */}
+      <section className="relative h-56 overflow-hidden">
+        <img src={LIGHTHOUSE_IMG} alt="Cozy harbor with lighthouse at dusk" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B5E4B]/80 via-[#1B5E4B]/50 to-transparent flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="font-['Lora'] italic text-white text-2xl sm:text-3xl max-w-lg leading-snug">
+              "A calm harbor for those who need it most."
+            </p>
           </div>
         </div>
       </section>
