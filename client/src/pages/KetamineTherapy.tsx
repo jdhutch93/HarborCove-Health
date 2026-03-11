@@ -7,7 +7,7 @@ import { CheckCircle, ArrowRight, Clock, DollarSign, Users, AlertCircle } from "
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const KETAMINE_IMG = "/assets/gen_infusion_chair_cozy.jpg";
+const KETAMINE_IMG = "/assets/clinic-chair.jpeg";
 const HERO_IMG = "/assets/gen_person_hammock.jpg";
 const CALM_IMG = "/assets/gen_calm_lake_morning.jpg";
 const CLINIC_IMG = "/assets/clinic-chair.jpeg";

@@ -9,7 +9,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const HERO_IMG = "/assets/gen_flowers_hill.jpg";
-const KETAMINE_IMG = "/assets/gen_infusion_chair_cozy.jpg";
+const KETAMINE_IMG = "/assets/clinic-chair.jpeg";
 const GLP1_IMG = "/assets/gen_meditation_nature.jpg";
 const COLLAB_IMG = "/assets/gen_lighthouse_harbor.jpg";
 
