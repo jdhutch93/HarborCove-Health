@@ -124,20 +124,17 @@ export default function About() {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-8">Inside Our Clinic</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md col-span-2 md:col-span-1 md:row-span-2">
-              <img src="/assets/clinic-chair.jpeg" alt="HarborCove infusion chair" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="rounded-xl overflow-hidden aspect-square shadow-md">
+              <img src="/assets/clinic-chair.jpeg" alt="HarborCove infusion suite" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+            <div className="rounded-xl overflow-hidden aspect-square shadow-md">
               <img src="/assets/clinic-treatment-room.jpeg" alt="HarborCove treatment room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+            <div className="rounded-xl overflow-hidden aspect-square shadow-md">
               <img src="/assets/clinic-waiting-room-1.jpeg" alt="HarborCove waiting room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
-              <img src="/assets/gen_cozy_reading_nook.jpg" alt="Calm and comfortable environment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
+            <div className="rounded-xl overflow-hidden aspect-square shadow-md">
               <img src="/assets/clinic-waiting-room-2.jpeg" alt="HarborCove lobby" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
