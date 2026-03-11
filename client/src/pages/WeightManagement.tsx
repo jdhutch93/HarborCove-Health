@@ -6,7 +6,7 @@ import { CheckCircle, ArrowRight, Stethoscope, ClipboardList, TrendingDown, Refr
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const GLP1_IMG = "/assets/gen_glp_hero.jpg";
+const GLP1_IMG = "/assets/gen_wm_hero.jpg";
 const FLOWERS_IMG = "/assets/gen_glp_relax.jpg";
 
 export default function WeightManagement() {
@@ -105,7 +105,7 @@ export default function WeightManagement() {
 
       {/* ── ATMOSPHERE PHOTO BANNER ── */}
       <section className="relative h-64 overflow-hidden">
-        <img src={FLOWERS_IMG} alt="Person relaxing in a field of wildflowers" className="w-full h-full object-cover" />
+        <img src={FLOWERS_IMG} alt="Person relaxing outdoors" className="w-full h-full object-cover object-[center_30%]" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#1B5E4B]/80 via-[#1B5E4B]/50 to-transparent flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="font-['Lora'] italic text-white text-2xl sm:text-3xl max-w-lg leading-snug">

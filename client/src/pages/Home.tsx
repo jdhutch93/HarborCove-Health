@@ -205,30 +205,15 @@ export default function Home() {
       <section className="py-12 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-8">Our Clinic & Environment</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <div className="rounded-xl overflow-hidden aspect-square shadow-md">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
               <img src="/assets/clinic-chair.jpeg" alt="HarborCove infusion suite" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-xl overflow-hidden aspect-square shadow-md">
-              <img src="/assets/clinic-room-1.jpeg" alt="HarborCove clinic" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="rounded-xl overflow-hidden aspect-square shadow-md">
-              <img src="/assets/clinic-treatment-room.jpeg" alt="HarborCove treatment room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="rounded-xl overflow-hidden aspect-square shadow-md">
-              <img src="/assets/clinic-room-2.jpeg" alt="HarborCove clinic room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="rounded-xl overflow-hidden aspect-square shadow-md hidden md:block">
+            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
               <img src="/assets/clinic-room-3.jpeg" alt="HarborCove clinic" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="rounded-xl overflow-hidden aspect-square shadow-md hidden md:block">
+            <div className="rounded-xl overflow-hidden aspect-[4/3] shadow-md">
               <img src="/assets/clinic-waiting-room-1.jpeg" alt="HarborCove waiting room" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="rounded-xl overflow-hidden aspect-square shadow-md hidden md:block">
-              <img src="/assets/clinic-room-4.jpeg" alt="HarborCove clinic" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="rounded-xl overflow-hidden aspect-square shadow-md hidden md:block">
-              <img src="/assets/clinic-waiting-room-2.jpeg" alt="HarborCove lobby" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
