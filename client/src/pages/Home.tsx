@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 const HERO_IMG = "/assets/gen_flowers_hill.jpg";
 const KETAMINE_IMG = "/assets/clinic-chair.jpeg";
-const GLP1_IMG = "/assets/gen_meditation_nature.jpg";
+const GLP1_IMG = "/assets/gen_glp_fit_person.jpg";
 const COLLAB_IMG = "/assets/gen_lighthouse_harbor.jpg";
 
 export default function Home() {

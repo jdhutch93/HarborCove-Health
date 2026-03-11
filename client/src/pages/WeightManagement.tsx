@@ -6,7 +6,7 @@ import { CheckCircle, ArrowRight, Stethoscope, ClipboardList, TrendingDown, Refr
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const GLP1_IMG = "/assets/gen_meditation_nature.jpg";
+const GLP1_IMG = "/assets/gen_glp_fit_person.jpg";
 const FLOWERS_IMG = "/assets/gen_flowers_hill.jpg";
 
 export default function WeightManagement() {
