@@ -1,13 +1,10 @@
 /* ============================================================
    HARBORCOVE HEALTH — Navbar
-   Large prestigious logo: big shield + exact brand wordmark
-   Reference: intakeq.com form header with large shield
+   Layout: Logo far LEFT | Nav links CENTERED | Button RIGHT
    ============================================================ */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, MessageSquare } from "lucide-react";
-
-const SPRUCE_URL = "https://spruce.care/harborcovehealth";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -44,47 +41,43 @@ export default function Navbar() {
           : "bg-[#1B5E4B]/92 backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto pl-2 pr-4 sm:pl-3 sm:pr-6 lg:pl-4 lg:pr-8">
-        <div className="flex items-center justify-between" style={{ height: '100px' }}>
+      {/* Full-width container — no max-width constraint so logo truly hugs the left edge */}
+      <div style={{ width: '100%', paddingLeft: '16px', paddingRight: '16px', boxSizing: 'border-box' }}>
+        <div style={{ display: 'flex', alignItems: 'center', height: '96px', width: '100%' }}>
 
-          {/* ── LOGO ── */}
-          <Link href="/" className="flex items-center gap-4 group flex-shrink-0" style={{ marginLeft: 0, paddingLeft: 0 }}>
-            {/* LARGE shield — transparent, no white box, high detail visible */}
+          {/* ── LOGO — pinned to far left ── */}
+          <Link href="/" className="flex items-center group flex-shrink-0" style={{ gap: '14px', textDecoration: 'none' }}>
             <img
               src="/assets/logo-shield-transparent.png"
               alt="HarborCove Health"
               style={{
-                height: '92px',
-                width: '92px',
+                height: '88px',
+                width: '88px',
                 objectFit: 'contain',
                 flexShrink: 0,
-                filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.45))',
+                filter: 'drop-shadow(0 4px 16px rgba(0,0,0,0.5))',
                 transition: 'transform 0.3s ease',
               }}
               className="group-hover:scale-105"
             />
-
-            {/* Wordmark — exact brand typography matching provided logo */}
             <div className="hidden sm:flex flex-col justify-center" style={{ gap: 0 }}>
-              {/* "HarborCove" — large elegant serif */}
               <span
                 style={{
                   fontFamily: "'Lora', Georgia, 'Times New Roman', serif",
                   fontWeight: 400,
-                  fontSize: '2.4rem',
+                  fontSize: '2.2rem',
                   color: '#ffffff',
                   letterSpacing: '-0.02em',
                   lineHeight: 1,
                   textShadow: '0 1px 8px rgba(0,0,0,0.3)',
+                  whiteSpace: 'nowrap',
                 }}
               >
                 HarborCove
               </span>
-
-              {/* Wave swoosh SVG */}
               <svg
                 viewBox="0 0 220 16"
-                style={{ width: '100%', height: '11px', marginTop: '3px', marginBottom: '2px' }}
+                style={{ width: '100%', height: '10px', marginTop: '3px', marginBottom: '2px' }}
                 preserveAspectRatio="none"
               >
                 <path
@@ -95,15 +88,13 @@ export default function Navbar() {
                   strokeLinecap="round"
                 />
               </svg>
-
-              {/* "HEALTH" — spaced lighter teal */}
               <span
                 style={{
                   fontFamily: "'Nunito Sans', 'Helvetica Neue', Arial, sans-serif",
                   fontWeight: 300,
-                  fontSize: '0.72rem',
+                  fontSize: '0.68rem',
                   color: '#7EC8A4',
-                  letterSpacing: '0.42em',
+                  letterSpacing: '0.44em',
                   textTransform: 'uppercase',
                   lineHeight: 1,
                   textAlign: 'center',
@@ -114,8 +105,8 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* ── DESKTOP NAV ── */}
-          <nav className="hidden lg:flex items-center gap-0.5">
+          {/* ── DESKTOP NAV — centered in the remaining space ── */}
+          <nav className="hidden lg:flex items-center justify-center flex-1" style={{ gap: '2px' }}>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -125,38 +116,35 @@ export default function Navbar() {
                     ? "text-white bg-white/15 font-semibold"
                     : "text-[#C8E6D4] hover:text-white hover:bg-white/10"
                 }`}
-                style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: location === link.href ? 600 : 400 }}
+                style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: location === link.href ? 600 : 400, whiteSpace: 'nowrap' }}
               >
                 {link.label}
               </Link>
             ))}
-            <a
-              href={SPRUCE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-2 inline-flex items-center gap-1.5 px-4 py-2 bg-white/15 hover:bg-white/25 text-white text-sm rounded transition-colors duration-150"
-              style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 600 }}
-              title="HIPAA-Compliant Secure Messaging"
-            >
-              <MessageSquare className="w-3.5 h-3.5" /> Secure Message
-            </a>
+          </nav>
+
+          {/* ── START INTAKE BUTTON — pinned to far right ── */}
+          <div className="hidden lg:flex items-center flex-shrink-0" style={{ marginLeft: '12px' }}>
             <Link
               href="/intake-forms"
-              className="ml-2 px-5 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm rounded transition-colors duration-150 shadow-sm"
-              style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 700 }}
+              className="px-5 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm rounded transition-colors duration-150 shadow-sm"
+              style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 700, whiteSpace: 'nowrap' }}
             >
               Start Intake
             </Link>
-          </nav>
+          </div>
 
           {/* ── MOBILE MENU BUTTON ── */}
-          <button
-            className="lg:hidden p-2 text-white"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="lg:hidden flex-1 flex justify-end">
+            <button
+              className="p-2 text-white"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+
         </div>
       </div>
 
@@ -178,15 +166,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href={SPRUCE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 flex items-center justify-center gap-2 px-4 py-3 bg-white/15 hover:bg-white/25 text-white text-sm rounded"
-              style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 600 }}
-            >
-              <MessageSquare className="w-4 h-4" /> Secure Message (Spruce)
-            </a>
             <Link
               href="/intake-forms"
               className="mt-2 px-4 py-3 bg-[#2E8B6E] text-white text-sm rounded text-center"
