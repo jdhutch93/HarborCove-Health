@@ -122,7 +122,7 @@ export default function ProviderReferral() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2E8B6E] hover:bg-[#267A60] text-white font-['Nunito_Sans'] font-700 text-base rounded transition-all hover:shadow-lg"
               >
-                Submit a Mental Health Referral <ArrowRight className="w-4 h-4" />
+                Refer a Patient <ArrowRight className="w-4 h-4" />
               </a>
               <Link
                 href="/contact"
