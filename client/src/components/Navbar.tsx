@@ -44,11 +44,11 @@ export default function Navbar() {
           : "bg-[#1B5E4B]/92 backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto pl-2 pr-4 sm:pl-3 sm:pr-6 lg:pl-4 lg:pr-8">
         <div className="flex items-center justify-between" style={{ height: '100px' }}>
 
           {/* ── LOGO ── */}
-          <Link href="/" className="flex items-center gap-4 group flex-shrink-0">
+          <Link href="/" className="flex items-center gap-4 group flex-shrink-0" style={{ marginLeft: 0, paddingLeft: 0 }}>
             {/* LARGE shield — transparent, no white box, high detail visible */}
             <img
               src="/assets/logo-shield-transparent.png"
