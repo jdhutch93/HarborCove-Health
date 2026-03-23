@@ -42,7 +42,7 @@ export default function Navbar() {
       }`}
     >
       {/* Full-width container — no max-width constraint so logo truly hugs the left edge */}
-      <div style={{ width: '100%', paddingLeft: '48px', paddingRight: '32px', boxSizing: 'border-box' }}>
+      <div className="max-w-7xl mx-auto" style={{ paddingLeft: '32px', paddingRight: '32px', boxSizing: 'border-box' }}>
         <div style={{ display: 'flex', alignItems: 'center', height: '96px', width: '100%' }}>
 
           {/* ── LOGO — pinned to far left ── */}
