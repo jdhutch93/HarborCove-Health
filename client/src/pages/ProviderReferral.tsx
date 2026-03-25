@@ -25,9 +25,25 @@ export default function ProviderReferral() {
           <h1 className="font-['Lora'] font-700 text-white text-4xl sm:text-5xl leading-tight mb-4">
             Refer a Patient to HarborCove Health
           </h1>
-          <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-lg max-w-2xl">
+          <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-lg max-w-2xl mb-8">
             We partner with psychiatrists, PMHNPs, and pain management providers to deliver IV ketamine therapy as part of a comprehensive, collaborative treatment plan.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeTceK2UP7u4SVgYfk0MeX_uMifMTok0vBOh8kWCX0NaT5xEA/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2E8B6E] hover:bg-[#267A60] text-white font-['Nunito_Sans'] font-700 text-base rounded transition-all hover:shadow-lg"
+            >
+              Refer a Patient <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-['Nunito_Sans'] font-700 text-base rounded transition-colors"
+            >
+              Contact Us Directly
+            </a>
+          </div>
         </div>
       </section>
 

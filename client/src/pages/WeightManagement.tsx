@@ -25,9 +25,25 @@ export default function WeightManagement() {
           <h1 className="font-['Lora'] font-700 text-white text-4xl sm:text-5xl leading-tight mb-4">
             GLP-1 Assisted Weight Loss Program
           </h1>
-          <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-lg max-w-2xl">
+          <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-lg max-w-2xl mb-8">
             Compounded GLP-1 medications delivered directly to you, or come to the clinic for weekly injections — with ongoing provider support and weight monitoring.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://intakeq.com/new/d1pshm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2E8B6E] hover:bg-[#267A60] text-white font-['Nunito_Sans'] font-700 text-base rounded transition-all hover:shadow-lg"
+            >
+              Start GLP-1 Intake <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-['Nunito_Sans'] font-700 text-base rounded transition-colors"
+            >
+              Contact Us
+            </a>
+          </div>
         </div>
       </section>
 
