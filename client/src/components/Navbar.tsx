@@ -124,7 +124,7 @@ export default function Navbar() {
           </nav>
 
           {/* ── START INTAKE BUTTON — pinned to far right ── */}
-          <div className="hidden lg:flex items-center flex-shrink-0" style={{ marginLeft: '12px' }}>
+          <div className="hidden lg:flex items-center flex-shrink-0" style={{ marginLeft: '12px', gap: '8px' }}>
             <Link
               href="/intake-forms"
               className="px-5 py-2 bg-[#2E8B6E] hover:bg-[#267A60] text-white text-sm rounded transition-colors duration-150 shadow-sm"
@@ -132,6 +132,28 @@ export default function Navbar() {
             >
               Start Intake
             </Link>
+            <a
+              href="https://time.harborcovehealth.com/employee"
+              className="px-4 py-2 text-sm rounded transition-colors duration-150 shadow-sm"
+              style={{
+                fontFamily: "'Nunito Sans', sans-serif",
+                fontWeight: 600,
+                whiteSpace: 'nowrap',
+                border: '1.5px solid rgba(255,255,255,0.65)',
+                color: '#ffffff',
+                background: 'rgba(255,255,255,0.08)',
+              }}
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.18)';
+                (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.9)';
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.08)';
+                (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.65)';
+              }}
+            >
+              Employee Login
+            </a>
           </div>
 
           {/* ── MOBILE MENU BUTTON ── */}
@@ -173,6 +195,18 @@ export default function Navbar() {
             >
               Start Intake
             </Link>
+            <a
+              href="https://time.harborcovehealth.com/employee"
+              className="mt-1 px-4 py-3 text-white text-sm rounded text-center"
+              style={{
+                fontFamily: "'Nunito Sans', sans-serif",
+                fontWeight: 600,
+                border: '1.5px solid rgba(255,255,255,0.55)',
+                background: 'rgba(255,255,255,0.08)',
+              }}
+            >
+              Employee Login
+            </a>
           </nav>
         </div>
       )}
