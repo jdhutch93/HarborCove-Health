@@ -36,15 +36,15 @@ export default function Home() {
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
               <Shield className="w-3.5 h-3.5 text-[#C8E6D4]" />
-              <span className="text-[#C8E6D4] text-xs font-['Nunito_Sans'] font-700 tracking-wider uppercase">Evidence-Based Care · Yuma, Arizona</span>
+              <span className="text-[#C8E6D4] text-xs font-['Nunito_Sans'] font-700 tracking-wider uppercase">Evidence-Based Care · Yuma, Arizona · Cash-Pay Only</span>
             </div>
 
             <h1 className="font-['Lora'] font-700 text-white text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6 animate-fade-up-delay-1">
-              A New Path Forward for Depression, Pain & GLP-1 Assisted Weight Loss
+              Ketamine Therapy &amp; Weight Management in Yuma, AZ
             </h1>
 
             <p className="text-[#D6E8F5] text-lg sm:text-xl font-['Nunito_Sans'] font-400 leading-relaxed mb-8 animate-fade-up-delay-2">
-              HarborCove Health provides evidence-based IV ketamine therapy and compounded GLP-1 weight management programs in Yuma, Arizona. Our focus is on patients who have struggled to find effective care — those living with treatment-resistant depression, chronic pain, or weight challenges that haven't responded to conventional approaches. You deserve access to medicine that works.
+              Evidence-based care for treatment-resistant depression, chronic pain, and medically supervised weight loss — from a trusted Yuma clinic. Cash-pay only. No insurance accepted. HSA/FSA welcome.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-3">
@@ -97,13 +97,13 @@ export default function Home() {
           <div className="max-w-3xl">
             <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">About HarborCove Health</p>
             <h2 className="section-heading font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl leading-tight mb-6">
-              Compassionate Care for Weight Loss & Mental Health
+              Compassionate Care for Weight Loss &amp; Mental Health
             </h2>
             <p className="text-[#374151] font-['Nunito_Sans'] text-lg leading-relaxed mb-4">
-              HarborCove Health is a cash-pay outpatient medical clinic in Yuma, Arizona, founded by Justin Hutchins, AGACNP-BC, FNP-BC — an advanced practice nurse practitioner with extensive experience in emergency medicine.
+              HarborCove Health is a specialty clinic in Yuma, Arizona, offering two life-changing programs: IV Ketamine Infusion Therapy for patients who haven't found relief through traditional treatments, and GLP-1 Weight Management for medically supervised, sustainable weight loss. Led by Justin Hutchins, NP, our team combines clinical expertise with compassionate, personalized care — available both in-person in Yuma and via telehealth.
             </p>
             <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-6">
-              We specialize in two areas where patients often struggle to find effective, accessible care: treatment-resistant depression and chronic pain managed through IV ketamine therapy, and medically supervised weight management through compounded GLP-1 receptor agonist therapy. Our approach is grounded in clinical evidence, transparent communication, and a collaborative model that keeps your existing providers in the loop.
+              We are a cash-pay clinic — no insurance accepted. This keeps our focus entirely on you, with transparent pricing, no billing delays, and no prior authorizations. HSA and FSA cards are accepted.
             </p>
             <Link href="/about" className="inline-flex items-center gap-1.5 text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm hover:gap-2.5 transition-all">
               Meet Justin Hutchins <ChevronRight className="w-4 h-4" />
@@ -116,8 +116,8 @@ export default function Home() {
       <section className="py-20 bg-[#F4F7FA] dot-grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Our Services</p>
-            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl">What We Treat</h2>
+            <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Our Programs</p>
+            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl">Our Programs</h2>
           </div>
 
           {/* Ketamine Service */}
@@ -135,7 +135,7 @@ export default function Home() {
                 IV Ketamine Therapy
               </h3>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
-                For patients with treatment-resistant depression or chronic pain who have not responded adequately to conventional therapies, IV ketamine offers a rapidly acting, evidence-backed alternative. Administered under close medical supervision, ketamine infusions can produce meaningful relief where other treatments have fallen short.
+                Fast-acting relief for treatment-resistant depression, anxiety, PTSD, and chronic pain. Administered via IV infusion in a calm, supervised setting in Yuma, AZ. Requires a provider referral. Cash-pay, $500 per infusion.
               </p>
               <ul className="space-y-2 mb-6">
                 {[
@@ -166,10 +166,10 @@ export default function Home() {
             <div className="order-2 lg:order-1">
               <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-xs tracking-widest uppercase mb-2">Service 02</p>
               <h3 className="section-heading font-['Lora'] font-700 text-[#1B5E4B] text-2xl sm:text-3xl mb-4">
-                GLP-1 Assisted Weight Loss Program
+                GLP-1 Weight Management
               </h3>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
-                Our GLP-1 program offers compounded GLP-1 medications delivered directly to you, or you may come to the clinic for weekly injections. The program requires regular monthly check-ins with your provider and weight tracking, which can be reported remotely for your convenience.
+                Medically supervised weight loss using GLP-1 medications (semaglutide/tirzepatide). Personalized plans, ongoing support, and telehealth options available. Compounded medications shipped directly to your door. Cash-pay only, starting at $260/month.
               </p>
               <ul className="space-y-2 mb-6">
                 {[
@@ -316,7 +316,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl mb-4">Ready to Take the Next Step?</h2>
           <p className="text-[#374151] font-['Nunito_Sans'] text-lg mb-8 max-w-xl mx-auto">
-            Whether you are a patient seeking relief or a provider looking to refer, we make the process straightforward.
+            Serving Yuma, AZ and surrounding communities. Telehealth available statewide in Arizona. Cash-pay only — no insurance accepted. Book a free consultation today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/intake-forms" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#1B5E4B] hover:bg-[#164d3c] text-white font-['Nunito_Sans'] font-700 text-base rounded transition-all hover:shadow-lg">

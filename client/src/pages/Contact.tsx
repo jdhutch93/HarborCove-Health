@@ -72,10 +72,10 @@ export default function Contact() {
             Get in Touch
           </p>
           <h1 className="font-['Lora'] font-700 text-white text-4xl sm:text-5xl leading-tight mb-4">
-            Contact HarborCove Health
+            Book a Consultation
           </h1>
           <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-lg max-w-2xl">
-            We are here to answer your questions and help you take the next step. All communication options below are HIPAA-compliant.
+            Ready to take the next step? We offer free consultations for both our IV Ketamine Therapy and GLP-1 Weight Management programs. You can visit us in person at our Yuma, AZ clinic, or connect with us via telehealth. Telehealth available statewide in Arizona.
           </p>
         </div>
       </section>

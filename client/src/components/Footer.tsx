@@ -159,9 +159,17 @@ export default function Footer() {
 
           {/* Bottom bar */}
           <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p className="text-[#C8E6D4] text-xs font-['Nunito_Sans']">
-              © {new Date().getFullYear()} HarborCove Health. All rights reserved.
-            </p>
+            <div>
+              <p className="text-[#C8E6D4] text-xs font-['Nunito_Sans'] font-700 mb-0.5">
+                HarborCove Health | Yuma, AZ
+              </p>
+              <p className="text-[#7EC8A4] text-xs font-['Nunito_Sans']">
+                IV Ketamine Therapy · GLP-1 Weight Management · Telehealth Available
+              </p>
+              <p className="text-[#C8E6D4] text-xs font-['Nunito_Sans'] mt-0.5">
+                © 2025 HarborCove Health. All rights reserved.
+              </p>
+            </div>
             <p className="text-[#C8E6D4] text-xs font-['Nunito_Sans'] text-center sm:text-right">
               This website is for informational purposes only and does not constitute medical advice.
             </p>

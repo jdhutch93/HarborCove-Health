@@ -23,10 +23,10 @@ export default function WeightManagement() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <p className="text-[#C8E6D4] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">HarborCove Health</p>
           <h1 className="font-['Lora'] font-700 text-white text-4xl sm:text-5xl leading-tight mb-4">
-            GLP-1 Assisted Weight Loss Program
+            GLP-1 Weight Management in Yuma, AZ
           </h1>
           <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-lg max-w-2xl mb-8">
-            Compounded GLP-1 medications delivered directly to you, or come to the clinic for weekly injections — with ongoing provider support and weight monitoring.
+            HarborCove Health offers medically supervised weight management using GLP-1 receptor agonist medications — including semaglutide (Ozempic/Wegovy) and tirzepatide (Mounjaro/Zepbound). Personalized plans, ongoing support, and telehealth options available. Cash-pay only — no insurance accepted.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -52,18 +52,18 @@ export default function WeightManagement() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-14 items-start">
             <div>
-              <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">What Are Compounded GLP-1 Medications?</p>
+              <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">What Are GLP-1 Medications?</p>
               <h2 className="section-heading font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl leading-tight mb-6">
-                A New Standard in Medically Supervised Weight Loss
+                What Are GLP-1 Medications?
               </h2>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
-                GLP-1 (glucagon-like peptide-1) receptor agonists are a class of medications that mimic a naturally occurring hormone involved in blood sugar regulation and appetite control. Our program uses compounded GLP-1 medications — sent directly from a licensed pharmacy to your door — so you can begin treatment conveniently and affordably.
+                GLP-1 medications work by mimicking a hormone that regulates blood sugar and appetite. They help reduce hunger, slow digestion, and support meaningful, sustained weight loss — with strong clinical evidence behind them.
               </p>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
-                These medications work by slowing gastric emptying, reducing appetite, and improving insulin sensitivity — creating a metabolic environment that supports meaningful, sustained weight reduction when combined with appropriate lifestyle guidance.
+                Our program uses compounded GLP-1 medications including semaglutide and tirzepatide — sent directly from a licensed pharmacy to your door — so you can begin treatment conveniently and affordably.
               </p>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed">
-                At HarborCove Health, GLP-1 therapy is prescribed and monitored by Justin Hutchins, AGACNP-BC, FNP-BC. This is not a one-size-fits-all program — every patient receives individualized assessment, prescription, and ongoing monitoring.
+                GLP-1 weight management is appropriate for adults with a BMI of 27 or higher, especially those with weight-related conditions such as type 2 diabetes, hypertension, or metabolic syndrome. We start with a thorough medical evaluation to ensure GLP-1 therapy is appropriate for you.
               </p>
             </div>
             <div className="bg-[#F0FAF5] rounded-xl p-8 border border-[#C8E6D4]">

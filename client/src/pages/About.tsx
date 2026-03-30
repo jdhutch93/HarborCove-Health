@@ -23,7 +23,7 @@ export default function About() {
             About HarborCove Health
           </h1>
           <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-lg max-w-2xl">
-            A clinic built on the belief that patients deserve access to evidence-based, compassionate, and transparent medical care.
+            HarborCove Health was founded on a simple belief: every patient deserves access to evidence-based, compassionate care — especially when other treatments haven't worked. A specialty clinic in Yuma, Arizona focused on IV ketamine therapy and medically supervised weight management.
           </p>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function About() {
                 Justin Hutchins, AGACNP-BC, FNP-BC
               </h2>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
-                Justin Hutchins is an advanced practice nurse practitioner with dual board certifications as an Adult-Gerontology Acute Care Nurse Practitioner (AGACNP-BC) and a Family Nurse Practitioner (FNP-BC). His clinical background is rooted in emergency medicine — a discipline that demands precision, rapid assessment, and calm under pressure.
+                Justin Hutchins is a board-certified nurse practitioner with a clinical focus on mental health, pain management, and metabolic health. He founded HarborCove Health to bring cutting-edge treatments to the Yuma community in a welcoming, clinically rigorous environment.
               </p>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
                 HarborCove Health was founded on the recognition that patients with treatment-resistant depression and chronic pain often face significant barriers to accessing specialized care — particularly in communities like Yuma, Arizona, where subspecialty services can be limited. Justin established HarborCove Health to bring evidence-based ketamine therapy and GLP-1 weight management to patients who need them, with the clinical rigor and personal attention that complex cases require.
@@ -83,7 +83,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Our Philosophy</p>
-            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl mb-4">What We Stand For</h2>
+            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl mb-4">Our Philosophy</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -158,12 +158,12 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">About the Clinic</p>
-            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl mb-6">Serving Yuma, Arizona</h2>
+            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl mb-6">Serving Yuma and Beyond</h2>
             <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
-              HarborCove Health is an outpatient medical clinic located at 3970 W 24th St Ste 209, Yuma, AZ 85364. We operate as a cash-pay practice, which means we are not contracted with insurance companies. This allows us to focus entirely on delivering the care our patients need without the administrative constraints that often limit treatment options in insurance-based settings.
+              Our clinic is located in Yuma, AZ at 3970 W 24th St Ste 209, Yuma, AZ 85364. We treat the whole person, not just the diagnosis. Whether you're struggling with depression that hasn't responded to medications, dealing with chronic pain, or looking for lasting weight loss support, we take the time to understand your history and build a plan tailored to you.
             </p>
             <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-8">
-              We serve patients from throughout the Yuma region and welcome referrals from providers across southwestern Arizona. Our clinic is designed to be a calm, private, and professional environment where patients feel safe and supported throughout their treatment.
+              Telehealth services are available to patients across Arizona. We are a cash-pay clinic — no insurance accepted. HSA and FSA cards are welcome.
             </p>
             <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#1B5E4B] hover:bg-[#164d3c] text-white font-['Nunito_Sans'] font-700 text-base rounded transition-colors">
               Get in Touch <ArrowRight className="w-4 h-4" />

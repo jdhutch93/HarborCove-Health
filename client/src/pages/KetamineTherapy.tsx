@@ -26,10 +26,10 @@ export default function KetamineTherapy() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <p className="text-[#C8E6D4] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">HarborCove Health</p>
           <h1 className="font-['Lora'] font-700 text-white text-4xl sm:text-5xl leading-tight mb-4">
-            IV Ketamine Therapy
+            IV Ketamine Infusion Therapy in Yuma, AZ
           </h1>
           <p className="text-[#D6E8F5] font-['Nunito_Sans'] text-lg max-w-2xl mb-8">
-            Evidence-based IV ketamine therapy for treatment-resistant depression and chronic pain — administered under direct medical supervision in Yuma, Arizona.
+            If antidepressants and traditional therapies haven't worked for you, IV ketamine therapy may offer the breakthrough you've been looking for. HarborCove Health provides ketamine infusion treatments in Yuma, AZ, supervised by Justin Hutchins, NP, in a safe, calm, and clinical environment. Cash-pay only — no insurance accepted.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -57,13 +57,13 @@ export default function KetamineTherapy() {
             <div>
               <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">What Is Ketamine Therapy?</p>
               <h2 className="section-heading font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl leading-tight mb-6">
-                A Rapid-Acting Treatment for Difficult-to-Treat Conditions
+                What Is Ketamine Infusion Therapy?
               </h2>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
-                Ketamine is an FDA-approved anesthetic that has been studied extensively for its antidepressant and analgesic properties when administered at sub-anesthetic doses. Unlike traditional antidepressants that can take weeks to produce effects, IV ketamine often produces noticeable improvement within hours to days of the first infusion.
+                Ketamine is an FDA-approved anesthetic that has shown remarkable results as a rapid-acting treatment for mood disorders and chronic pain. Unlike traditional antidepressants that can take weeks to work, many patients report significant improvement after just one to three infusions.
               </p>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed mb-4">
-                The mechanism is distinct from conventional antidepressants: ketamine works primarily on NMDA glutamate receptors, promoting rapid synaptogenesis — the formation of new neural connections — in areas of the brain affected by depression and chronic pain.
+                The mechanism is distinct from conventional antidepressants: ketamine works primarily on NMDA glutamate receptors, promoting rapid synaptogenesis — the formation of new neural connections — in areas of the brain affected by depression and chronic pain. A provider referral is required for ketamine therapy.
               </p>
               <p className="text-[#374151] font-['Nunito_Sans'] text-base leading-relaxed">
                 At HarborCove Health, every infusion is performed by Justin Hutchins, AGACNP-BC, FNP-BC, with continuous monitoring of vital signs, oxygen saturation, and patient comfort throughout the session.
@@ -100,7 +100,7 @@ export default function KetamineTherapy() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Conditions We Treat</p>
-            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl">Who Can Benefit from Ketamine Therapy?</h2>
+            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl">Conditions We Treat</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-xl p-8 shadow-sm border border-[#E8EEF4]">
@@ -148,13 +148,13 @@ export default function KetamineTherapy() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
-              <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Treatment Protocol</p>
-              <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl mb-4">What to Expect</h2>
-              <p className="text-[#374151] font-['Nunito_Sans'] text-base">
-                Our protocol follows evidence-based guidelines for IV ketamine therapy. Every patient's treatment plan is individualized based on their diagnosis, response, and clinical needs.
-              </p>
-            </div>
+          <div className="text-center mb-12">
+            <p className="text-[#2E8B6E] font-['Nunito_Sans'] font-700 text-sm tracking-widest uppercase mb-3">Treatment Protocol</p>
+            <h2 className="font-['Lora'] font-700 text-[#1B5E4B] text-3xl sm:text-4xl mb-4">What to Expect</h2>
+            <p className="text-[#374151] font-['Nunito_Sans'] text-base">
+              Each infusion session takes place in a private, comfortable setting at our Yuma clinic. Sessions typically last 45–60 minutes. A standard treatment protocol involves a series of 6 infusions over 2–3 weeks, followed by maintenance sessions as needed. Ideal candidates are patients who have tried two or more antidepressants without adequate relief.
+            </p>
+          </div>
 
             <div className="space-y-6">
               {[
