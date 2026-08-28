@@ -174,7 +174,7 @@ export default function WeightManagement() {
                   { dose: "T 8.5 mg", price: "$430" },
                   { dose: "T 11 mg", price: "$440" },
                   { dose: "T 13.5 mg", price: "$470" },
-                  { dose: "T 15 mg", price: "$499" },
+                  { dose: "T 17 mg", price: "$499" },
                 ].map(({ dose, price }) => (
                   <div key={dose} className="flex items-center justify-between py-1.5 border-b border-white/10 last:border-0">
                     <span className="text-[#D6E8F5] font-['Nunito_Sans'] text-sm">{dose}</span>
